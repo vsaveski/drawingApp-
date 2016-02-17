@@ -1,0 +1,78 @@
+#canvas {
+    cursor: url('brush.png'), default;
+}
+
+.brush-picker .btn-primary.active {
+    background-color: #191970;
+}
+.color-btn .glyphicon-remove-sign {
+    color: transparent;
+}
+
+.black-bg, .black-bg:focus {
+    background-color: #000000;
+    color: white;
+}
+.white-bg, .white-bg:focus {
+    background-color: #FAEBD7;
+}
+.red-bg, .red-bg:focus {
+    background-color: #FF0000;
+}
+.green-bg, .green-bg:focus {
+    background-color: #008000;
+}
+.blue-bg, .blue-bg:focus {
+    background-color: #0000FF;
+    color: white;
+}
+.orange-bg, .orange-bg:focus {
+    background-color: #FF8C00;
+}
+.yellow-bg, .yellow-bg:focus {
+    background-color: #FFFF00;
+}
+.purple-bg, .purple-bg:focus {
+    background-color: #800080;
+    color: white;
+}
+.pink-bg, .pink-bg:focus {
+    background-color: #FF1493;
+}
+.gold-bg, .gold-bg:focus {
+    background-color: #FFD700;
+}
+.magenta-bg, .magenta-bg:focus {
+    background-color: #FF00FF;
+}
+.lime-bg, .lime-bg:focus {
+    background-color: #00FF00;
+}
+.teal-bg, .teal-bg:focus {
+    background-color: #008080;
+}
+.cyan-bg, .cyan-bg:focus {
+    background-color: #00FFFF;
+}
+.navy-bg, .navy-bg:focus {
+    background-color: #000080;
+    color: white;
+}
+.brown-bg, .brown-bg:focus {
+    background-color: #A52A2A;
+    color: white;
+}
+.maroon-bg, .maroon-bg:focus {
+    background-color: #800000;
+    color: white;
+}
+.gray-bg, .gray-bg:focus {
+    background-color: #808080;
+}
+.snow-bg, .snow-bg:focus {
+    background-color: #FFFAFA;
+}
+.crimson-bg, .crimson-bg:focus {
+    background-color: #DC143C;
+}
+

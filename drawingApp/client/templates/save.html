@@ -1,0 +1,35 @@
+<template name='save'>
+
+    <!-- Modal -->
+    <div class="modal fade" id="saveModal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="bg-primary modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="bg-primary modal-title" id="myModalLabel">
+                        Export Image as PNG
+                    </h4>
+                </div>
+
+                <div class="modal-body">
+                    <img src="{{imageToSave}}" alt="Saved image" class="img-thumbnail">
+                </div>
+
+                <div class="modal-footer">
+                    <a class="btn btn-primary export-btn"
+                        href="{{imageToSave}}"
+                        download="canvas.png" role="button">Let's Export</a>
+                    <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</template>

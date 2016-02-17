@@ -1,0 +1,47 @@
+<template name="instructions">
+    <!-- Modal -->
+    <div class="modal fade" id="show-instructions" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Welcome to the Collaborative Environment
+                    </h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        This is highly collaborative environment. All the connected
+                        users can draw on the <strong>same canvas at the same
+                            time</strong>. Everything with the exception of the
+                        background will eventually propagate to all the users.
+                        Every user sets its own background and it does not sync.
+                        So at the end every user can personalize the final drawing
+                        with its own background.
+                    </p>
+                    <p>
+                        Because of the realtime preview, there are some restrictions
+                        to make user experience nicer. User can see changes in realtime
+                        until it touches the canvas with is own brush. Then the realtime
+                        is stopped until user finishes and syncs possible changes. After
+                        syncing is done, realtime is turned on again.
+                    </p>
+                    <p>
+                        <strong>After screen is rotated (mobile, tablet..) changes
+                        are synced automatically!</strong>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</template>

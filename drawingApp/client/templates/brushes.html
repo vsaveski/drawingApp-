@@ -1,0 +1,14 @@
+<template name="brushes">
+    <div class="btn-group brush-picker" data-toggle="buttons">
+        <label class="btn btn-sm btn-primary {{isActive 'circle'}}">
+            <input type="radio" name="brushes" value="circle">Circle
+        </label>
+        <label class="btn btn-sm btn-primary {{isActive 'square'}}">
+            <input type="radio" name="brushes" value="square">Square
+        </label>
+        <label class="btn btn-sm btn-primary {{isActive 'triangle'}}">
+            <input type="radio" name="brushes" value="triangle">Triangle
+        </label>
+    </div>
+</template>
+

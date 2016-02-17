@@ -1,0 +1,58 @@
+<template name="wall">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-xs-12">
+                {{#if isSuccess}}
+                <div class="alert alert-success" role="alert">
+                    <p>
+                        <strong>Live Preview</strong> is on! Changes will be shown
+                        <strong>immediately!</strong>
+                    </p>
+                </div>
+                {{else}}
+                <div class="alert alert-warning" role="alert">
+                    <p><strong>Live Preview</strong> is off! There are (possible)
+                        pending changes!
+                    <button type="button" disabled="{{isPristine}}"
+                        class="btn btn-primary btn-xs sync-btn">Sync</button></p>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        <div id="wrapper-panel" class="row">
+
+            <div class="col-xs-12 col-sm-8 col-sm-push-4 col-md-9 col-md-push-3">
+
+                {{> canvas}}
+                {{> save}}
+                {{> instructions}}
+            </div>
+
+            <div id="control-panel" class="col-xs-12 col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Brushes</div>
+                    <div class="panel-body">
+                        {{> brushes}}
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Colors</div>
+                    <div class="panel-body">
+                        {{> colors}}
+                    </div>
+                </div>
+
+                <!-- <div class="panel panel-default"> -->
+                    <!-- <div class="panel-heading">Controls</div> -->
+                    <!-- <div class="panel-body"> -->
+                        {{> controls}}
+                    <!-- </div> -->
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
+</template>
+

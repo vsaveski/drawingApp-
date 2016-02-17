@@ -1,0 +1,49 @@
+<template name="controls">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Size</div>
+        <div class="panel-body">
+            <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" class='btn btn-default thinner'>
+                        <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" class='btn btn-link'>
+                        <span class="badge">{{getThickness}}</span>
+                    </button>
+                </div>
+                <div class="btn-group btn-group-sm" role="group">
+                    <button type="button" class='btn btn-default thicker'>
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Opacity</div>
+        <div class="panel-body">
+            <div class="input-group">
+                <span class="input-group-addon">0.1</span>
+                <input type="range" class="form-control opacity-btn" title="Opacity"
+                min="0.1" max="1" step="0.01" value="{{getOpacity}}">
+                <span class="input-group-addon">1</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Controls</div>
+        <div class="panel-body">
+            <button type="button" class='btn btn-danger btn-block clear'>
+                Clear Screen</button>
+            <button type="button" class="btn btn-primary btn-block save-btn">
+                Export</button>
+        </div>
+    </div>
+
+</template>
+
